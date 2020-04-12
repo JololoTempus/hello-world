@@ -209,6 +209,7 @@ header ul.is-sticky li a.active {
 #properties {
     margin: 4rem 0 8rem;
     position: relative;
+    
 }
 
 #properties h2 {
@@ -217,6 +218,7 @@ header ul.is-sticky li a.active {
 
 #properties .container {
     position: relative;
+    text-align: center;
 }
 
 #properties .container:before {
@@ -248,17 +250,59 @@ header ul.is-sticky li a.active {
 #properties-slider img {
     width: 100%;
     display: block;
+    
+    
 }
+
+
 
 #properties-slider .property-details {
     padding: 1rem;
+    position: relative;
+   
+    
 }
+
 
 #properties-slider .price {
     font-size: 1.2rem;
     color: #343a40;
     font-weight: 800;
     margin: 0 0 0.5rem 0;
+}
+#properties-slider .CoolText {
+    color: rgb(255, 0, 0);
+  font-size: 30px;
+  line-height: 1.5em;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+  position: relative;
+  top: 100%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  
+}
+
+#properties-slider .hoverr {
+    position: relative;
+    top: -200px;
+    left: -160px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+#properties-slider .hoverr:hover {
+      opacity: 1;
+    
+}
+
+
+#properties-slider img.uno:hover ~ .hoverr{
+    opacity: 1;
+}
+#properties-slider img.uno:hover{
+    opacity: 50%;
 }
 
 #properties-slider .property-details span {
@@ -286,12 +330,10 @@ header ul.is-sticky li a.active {
     margin-top: 0.5rem;
 }
 
-#properties button.rounded {
-    display: block;
-    margin: 2rem auto 0;
-    width: 350px;
-}
+
 /* end: properties styles */
+
+
 
 /* start: agents styles */
 
@@ -612,3 +654,7 @@ footer small {
  
 }
 /* end: media queries */
+
+}
+
+
