@@ -1,660 +1,263 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
-
-/* start: global styles */
-body {
-    font-family: "Roboto", "Helvetica", "Sans-serif";
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #777;
-    line-height: 1.7;
-    border: -1px solid transparent;
-
-}
-
-* {
-    outline: none;
-}
-
-*:not(.slick-track):not(.slick-list) {
-    transition: 0.4s;
-}
-
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-h1, h2, h3, h4, h5 {
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2 {
-    font-family: "Playfair Display", serif;
-    font-weight: 800;
-}
-
-h1 {
-    font-size: 3rem;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-}
-
-h2 {
-    font-size: 2.5rem;
-    color: #f69314;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-}
-
-h3 {
-    font-size: 1.4rem;
-    font-weight: 300;
-}
-
-h4 {
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-
-h5 {
-    font-size: 1rem;
-    font-family: "Playfair Display", serif;
-}
-
-p {
-    margin: 0 0 1rem;
-}
-
-button.rounded {
-    background: #f69314;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    border-radius: 30px;
-    padding: 10px 30px;
-    line-height: 1.5;
-    cursor: pointer;
-}
-
-p.large-paragraph {
-    font-size: 1.25rem;
-    font-weight: 300;
-}
-/* end: global styles */
-
-/* start: header styles */
-#header-hero-container {
-    min-height: 600px;
-    height: calc(100vh);
-    position: relative;
-}
-
-header {
-    background: rgba(147, 179, 95, 0.548);
-    padding: 1rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-    height: 70px;
-}
-
-#logo {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 2.7rem;
-    font-weight: 800;
-    color: #000;
-    text-decoration: none;
-    position: relative;
-    top: -1px;  
-    right: 60px;
-}
-
-.hamburger-menu {
-    background-color: transparent;
-    border: 1px solid #fff;
-    padding: 3px 5px;
-    width: 30px;
-    cursor: pointer;
-    margin-top: 10px;
-    display: none;
-}
-
-.hamburger-menu .strip {
-    display: block;
-    height: 1px;
-    background-color: #fff;
-    margin: 4px 0;
-}
-
-header ul {
-    list-style-type: none;
-}
-
-header ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-#close-flyout {
-    display: none;
-}
-    
-header ul li a {
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: bold;
-
-}
-
-header ul.is-sticky li a {
-    color: #000;
-}
-
-header ul li a:hover,
-header ul li a.active {
-    color: rgb(63, 28, 1);
-}
-
-header ul.is-sticky li a:hover,
-header ul.is-sticky li a.active {
-    color: #080016;
-}
-/* end: header styles */
-
-/* start: hero section styles */
-#hero {
-    background: url('TheCloverBackGround.png') center center no-repeat;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-}
-
-#hero .fade {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(52, 58, 64, 0.9);
-    z-index: 1;
-}
-
-
-
-#hero .hero-text p {
-    line-height: 1.5em;
-    font-weight: 300;
-    font-size: 1rem;
-}
-/* end: hero section styles */
-
-/* end: how it works styles */
-
-/* start: properties styles */
-#properties {
-    margin: 4rem 0 8rem;
-    position: relative;
-    
-}
-
-#properties h2 {
-    margin-bottom: 3rem;
-}
-
-#properties .container {
-    position: relative;
-    text-align: center;
-}
-
-#properties .container:before {
-    content: "";
-    position: absolute;
-    right: 80px;
-    top: 80px;
-    color: #999;
-}
-
-#properties-slider a.slick-arrow {
-    color: #000;
-    position: absolute;
-    top: -78px;
-    right: 0;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    text-decoration: none;
-}
-
-#properties-slider a.slick-prev {
-    right: 80px;
-}
-
-#properties-slider .slick-slide {
-    padding: 0 15px;
-}
-
-#properties-slider img {
-    width: 100%;
-    display: block;
-    
-    
-}
-
-
-
-#properties-slider .property-details {
-    padding: 1rem;
-    position: relative;
-   
-    
-}
-
-
-#properties-slider .price {
-    font-size: 1.2rem;
-    color: #343a40;
-    font-weight: 800;
-    margin: 0 0 0.5rem 0;
-}
-#properties-slider .CoolText {
-    color: rgb(255, 0, 0);
-  font-size: 30px;
-  line-height: 1.5em;
-  text-shadow: 2px 2px 2px #000;
-  text-align: center;
-  position: relative;
-  top: 100%;
-  left: 100%;
-  transform: translate(-50%, -50%);
-  width: 60%;
-  
-}
-
-#properties-slider .hoverr {
-    position: relative;
-    top: -200px;
-    left: -160px;
-    opacity: 0;
-    transition: .5s ease;
-}
-
-#properties-slider .hoverr:hover {
-      opacity: 1;
-    
-}
-
-
-#properties-slider img.uno:hover ~ .hoverr{
-    opacity: 1;
-}
-#properties-slider img.uno:hover{
-    opacity: 50%;
-}
-
-#properties-slider .property-details span {
-    font-size: 0.8rem;
-    padding-right: 15px;
-}
-
-#properties-slider .property-details span.baths {
-    padding-left: 10px;
-}
-
-#properties-slider .property-details span.sqft {
-    padding-right: 0;
-    padding-left: 10px;
-}
-
-#properties-slider .property-details span.beds,
-#properties-slider .property-details span.baths {
-    border-right: 1px solid #888;
-}
-
-#properties-slider .property-details address {
-    font-size: 0.8rem;
-    font-style: normal;
-    margin-top: 0.5rem;
-}
-
-
-/* end: properties styles */
-
-
-
-/* start: agents styles */
-
-/* end: agents styles */
-
-/* start: best real estate company styles */
-
-/* end: best real estate company styles */
-
-/* start: services styles */
-/* end: services styles */
-
-/* start: testimonials styles */
-
-/* end: testimonials styles */
-
-/* start: contact us styles */
-#contact {
-    background: #f8f9fa;
-    padding: 4rem 0 8rem;
-}
-
-#contact h2 {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-#form-container {
-    width: 58%;
-    background: #fff;
-    padding: 3rem;
-    box-sizing: border-box;
-    height: 0%;
-}
-
-#form-container h3 {
-    color: #000;
-    font-family: "Playfair Display", serif;
-    margin-bottom: 2rem;
-}
-
-#form-container label {
-    display: block;
-    color: #000;
-    margin-top: 1rem;
-}
-
-#form-container input,
-#form-container textarea {
-    display: block;
-    border-radius: 20px;
-    padding: 10px;
-    border: 1px solid #ced4da;
-    width: 100%;
-    box-sizing: border-box;
-    height: 43px;
-    font-family: "Roboto", "Helvetica", "Sans-serif";
-    font-size: 1rem;
-    color: #495057;
-}
-
-#form-container textarea {
-    height: 170px;
-    margin-bottom: 2rem;
-    resize: none;
-}
-
-#address-container {
-    width: 38%;
-    background: #fff;
-    padding: 1.5rem;
-    box-sizing: border-box;
-    height: 0%;
-}
-
-#address-container label {
-    font-weight: 700;
-    display: block;
-    margin-top: 2rem;
-}
-
-#address-container label:first-child {
-    margin-top: 0;
-}
-
-#address-container address {
-    margin-bottom: 1.5rem;
-    font-style: normal;
-}
-
-#address-container a {
-    text-decoration: none;
-    color: #f69314;
-}
-
-#address-container a:hover {
-    text-decoration: underline;
-}
-/* end: contact us styles */
-
-/* start: footer styles */
-
-footer {
-   
-    
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;         
-       /* Footer height */
-  }
-
-
-  footer .flex {
-    padding-bottom: 6rem;
-    border-bottom: 1px solid #777;
-    
-}
-
-footer small {
-    
-    margin-top: 0rem;
-    font-size: 1rem;
-    display: block;
-    text-align: center;
-   
-}
-
-
-
-
-
-/* start: media queries */
-@media (max-width: 991px) {
-    #logo {
-        top: 1px;
-    }
-
-    #nav-toggle {
-        display: block;
-    }
-
-    nav ul {
-        position: fixed;
-        background: #fff;
-        right: -100%;
-        top: 0;
-        margin: 0;
-        padding: 2rem;
-        height: 100%;
-        width: 300px;
-        box-sizing: border-box;
-        box-shadow: 5px 0 10px 3px #999;
-    }
-
-    #close-flyout {
-        position: absolute;
-        right: 2rem;
-        top: 1.5rem;
-        font-size: 30px;
-        color: #777;
-        cursor: pointer;
-        display: block;
-        line-height: 1;
-        margin: 0;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 20px 0;
-    }
-
-    nav ul li:first-child {
-        margin-top: 50px;
-    }
-    nav ul li a {
-        font-size: 20px;
-        color: #212529;
-    }
-
-    nav ul li a.active,
-    nav ul li a:hover {
-        color: #997e5b;
-    }
-}
-
-@media (max-width: 767px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.75rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
-    .large-paragraph {
-        font-size: 1rem;
-    }
-
-    p {
-        font-size: 0.8rem;
-    }
-
-    .container {
-        max-width: 540px;
-    }
-
-    #hero .hero-text {
-        width: 400px;
-    }
-
-    #agents .card {
-        width: 49%;
-    }
-
-    #the-best .flex > img {
-        display: none;
-    }
-
-    #the-best .flex > div {
-        width: 100%;
-    }
-
-    #testimonials-slider p {
-        font-size: 1.2rem;
-    }
-
-    #properties .container:before {
-        top: 2px;
-        font-size: 0.85rem;
-    }
-
-    #properties-slider a.slick-arrow {
-        font-size: 0.85rem;
-    }
-
-    #properties button.rounded {
-        width: 300px;
-    }
-
-    #services .flex > div {
-        width: 48%;
-    }
-
-    #contact .flex {
-        flex-wrap: wrap;
-    }
-
-    #form-container {
-        width: 100%;
-        padding: 2rem;
-    }
-
-    #address-container {
-        width: 100%;
-        margin-top: 2rem;
-    }
-
-    
-
-@media (max-width: 500px) {
-    #hero .hero-text {
-        width: 330px;
-    }
-
-    #agents {
-        margin: 4rem 0 3rem;
-        padding: 0 0 3rem;
-    }
-
-    #agents .card {
-        width: 100%;
-    }
-
-    #agents p.large-paragraph {
-        width: 100%;
-    }
-
-    #how-it-works .flex {
-        display: block;
-    }
-
-    #how-it-works .flex > div {
-        width: 100%;
-        margin-top: 2rem;
-    }
-
-    #properties button.rounded {
-        width: 250px;
-    }
-
-    #services {
-        padding: 4rem 0 3rem;
-        margin: 4rem 0;
-    }
-
-    #services .flex > div {
-        width: 100%;
-    }
-
-    #testimonials {
-        margin-bottom: 4rem;
-    }
-
-    #testimonials-slider p {
-        font-size: 1rem;
-    }
-
-    #testimonials-slider .slick-arrow {
-        display: none !important;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Clover</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="styles.css" type="text/css" rel="Stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+
+    <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+                <a id="logo" href="#">&nbsp &nbsp The Clover</a>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+
+                    <ul id="nav-menu">
+                        <li><a href="#" class="active">Contacto</a></li>
+                        <li><a href="http://www.google.com" target="_blank">Properties</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Profesores</a></li>
+                        <li><a href="#">Alumnos</a></li>
+                        <li><a href="#">Ingresar</a></li>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section id="hero">
+            
+            
+        </section>
+    </div>
 
     
  
-}
-/* end: media queries */
 
-}
+    <section id="properties">
+        <div class="container">
+            <h2>Cursos</h2>
+            <div id="properties-slider" class="slick">
+                <div>
+                    <a href="kids.html">
+                    <img src="kids.gif" alt="Property 1" />
+                </a>
+                        <div class="property-details">
+                            <p class="price">Kids  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   Niños</p>
+                            <span class="beds">Play and Learn with us</span>
+                            <span class="baths">From 4 to 12 years old</span>
+                            <address></address>
+                            <span class="beds">Aprende y juega con nosotros</span>
+                        
+                            <span class="baths">Desde 4 hasta 12 años</span>
+                        </div>
+                    
+                </div>
+
+                <div>
+                    <img src="teens.gif" alt="Property 1" />
+                    <div class="property-details">
+                        <p class="price">Teens &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  Adolecentes</p>
+                        <span class="beds">6 beds</span>
+                        <span class="baths">4 baths</span>
+                        <span class="sqft">4,250 sqft.</span>
+                        <address>
+                            480 12th, Unit 14, San Francisco, CA
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="adults.gif" alt="Property 1" />
+                    <div class="property-details">
+                        <p class="price">Adults &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Adultos</p>
+                        <span class="beds">6 beds</span>
+                        <span class="baths">4 baths</span>
+                        <span class="sqft">4,250 sqft.</span>
+                        <address>
+                            480 12th, Unit 14, San Francisco, CA
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="exams.gif" alt="Property 1" />
+                    <div class="property-details">
+                        <p class="price">Exams &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Examenes</p>
+                        <span class="beds">6 beds</span>
+                        <span class="baths">4 baths</span>
+                        <span class="sqft">4,250 sqft.</span>
+                        <address>
+                            480 12th, Unit 14, San Francisco, CA
+                        </address>
+                    </div>
+                </div>
 
 
+            </div>
+
+            
+        </div>
+  
+ 
+    
+
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+
+            <div class="flex">
+                <div id="form-container">
+                    <h3>Contact Form</h3>
+                    <form>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" />
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" />
+
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" />
+
+                        <label for="message">Message</label>
+                        <textarea id="message">Write your message here..</textarea>
+
+                        <button class="rounded">Send Message</button>
+                    </form>
+                </div>
+
+                <div id="address-container">
+                    <label>Address</label>
+                    <address>
+                        20377 Evergreen Terrace Mountain View, California, USA 
+                    </address>
+
+                    <label>Phone</label>
+                    <a href="#">232-232-2323</a>
+
+                    <label>Email Address</label>
+                    <a href="#">ouremail@domain.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <script>
+        $(function () {
+            let headerElem = $('header');
+            let logo = $('#logo');
+            let navMenu = $('#nav-menu');
+            let navToggle = $('#nav-toggle');
+
+           $('#properties-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
+                nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 530,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    }
+                ]
+           });
+
+           $('#testimonials-slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '<a href="#" class="slick-arrow slick-prev"><</a>',
+                nextArrow: '<a href="#" class="slick-arrow slick-next">></a>'
+           });
+
+           navToggle.on('click', () => {
+               navMenu.css('right', '0');
+           });
+
+           $('#close-flyout').on('click', () => {
+                navMenu.css('right', '-100%');
+           });
+
+           $(document).on('click', (e) => {
+               let target = $(e.target);
+               if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
+                   navMenu.css('right', '-100%');
+               }
+           });
+
+           $(document).scroll(() => {
+               let scrollTop = $(document).scrollTop();
+
+               if (scrollTop > 0) {
+                   navMenu.addClass('is-sticky');
+                   logo.css('color', '000'); //it is tjhe lcover
+                   
+                   navToggle.css('border-color', '#000');
+                   navToggle.find('.strip').css('background-color', '#000');
+               } else {
+                   navMenu.removeClass('is-sticky');
+                   logo.css('color', '#000');
+                  
+                   navToggle.css('bordre-color', '#fff');
+                   navToggle.find('.strip').css('background-color', '#fff');
+               }
+
+               headerElem.css(scrollTop >= 200 ? {'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999'} : {'padding': '1rem 0', 'box-shadow': 'none' });
+           });
+
+           $(document).trigger('scroll');
+        });
+    </script>
+  <footer>
+    <div class="flex container"> </div>        
+         
+    <small>
+        
+        Copyright &copy; 2019 All rights reserved | This template is made with <span class="fa fa-heart"></span> by <a href="https://colorlib.com">Colorlib</a>
+    </small>
+</footer>
+
+</body>
+</html>
